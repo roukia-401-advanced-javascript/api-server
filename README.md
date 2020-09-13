@@ -17,8 +17,11 @@
 in ReST testing tool, you can UPDATE, DELETE, and GET records for both categories and products from your API using the routes 
 
 `/categories GET, POST`
+
 `/categories/:id/ PUT, DELETE`
+
 `/products GET, POST`
+
 `/products/:id/ PUT, DELETE`
 
 
