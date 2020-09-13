@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "name": "mobile phone",
+      "display_name": "mobile phone",
+      "description": "smart phone",
+      "id": 1
+    },
+    {
+      "name": "camera",
+      "display_name": "camera",
+      "description": "digital camera",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "category": "camera",
+      "name": "Nikon",
+      "display_name": "Nikon Z",
+      "description": "The Nikon Z 5 mirrorless camera is tough, light, easy to handle, and compatible with a wide array of full-frame lenses.",
+      "id": 2
+    },
+    {
+      "category": "mobile phone",
+      "name": "iPhone",
+      "display_name": "iPhone X",
+      "description": "The iPhone X has a 5.85 inch (marketed as 5.8 inch) OLED color-accurate screen that supports DCI-P3 wide color gamut, sRGB, and high dynamic range,and has a contrast ratio of 1,000,000:1.",
+      "id": 3
+    }
+  ]
+}
