@@ -2,7 +2,7 @@
 
 ## Author: Roukia Salahi
 
-- [tests report](...)
+- [tests report](https://github.com/roukia-401-advanced-javascript/api-server/actions)
 
 
 ## installation 
@@ -51,4 +51,4 @@ in ReST testing tool, you can UPDATE, DELETE, and GET records for both categorie
 
 ### lab-7
 
-![UML](/assets/uml-lab7.jpg)
+![UML](/assets/uml-lab7.JPG)
