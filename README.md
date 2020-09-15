@@ -2,11 +2,22 @@
 
 ## installation 
 
+- npm init -y
 - npm install -g json-server
+- npm install express
+- npm install jest
+
+  - `  "scripts": {
+    "test": "jest --verbose --coverage"
+  }`
+
+- npm install supertest `to test server`
 
 ## start server 
 
 - `json-server --watch ./data/db.json`
+
+- node index.js
 
 ## ReST testing tool 
 
