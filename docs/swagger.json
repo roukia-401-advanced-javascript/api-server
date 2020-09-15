@@ -1,166 +1,204 @@
 {
-    "openapi" : "3.0.1",
-    "info" : {
-      "title" : "defaultTitle",
-      "description" : "defaultDescription",
-      "version" : "0.1"
-    },
-    "servers" : [ {
-      "url" : "http://localhost:3000"
-    } ],
-    "paths" : {
-      "/categories/1" : {
-        "get" : {
-          "description" : "Auto generated using Swagger Inspector",
-          "responses" : {
-            "200" : {
-              "description" : "Auto generated using Swagger Inspector",
-              "content" : {
-                "application/json; charset=utf-8" : {
-                  "schema" : {
-                    "type" : "string"
-                  },
-                  "examples" : { }
-                }
-              }
-            }
-          },
-          "servers" : [ {
-            "url" : "http://localhost:3000"
-          } ]
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "/categories/1/" : {
-        "put" : {
-          "description" : "Auto generated using Swagger Inspector",
-          "requestBody" : {
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "defaultTitle",
+    "description" : "defaultDescription",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "http://localhost:3000"
+  } ],
+  "paths" : {
+    "/categories/5/" : {
+      "delete" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
             "content" : {
-              "application/json" : {
+              "application/json; charset=utf-8" : {
                 "schema" : {
-                  "type" : "object",
-                  "properties" : {
-                    "name" : {
-                      "type" : "string"
-                    },
-                    "description" : {
-                      "type" : "string"
-                    },
-                    "display_name" : {
-                      "type" : "string"
-                    }
-                  }
+                  "type" : "string"
                 },
-                "examples" : {
-                  "0" : {
-                    "value" : " {\n        \"name\": \"mobile phone\",\n        \"display_name\": \"phone\",\n        \"description\": \"smart phone\"\n }"
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "http://localhost:3000"
+      } ]
+    },
+    "/categories" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "post" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "display_name" : {
+                    "type" : "string"
                   }
                 }
-              }
-            }
-          },
-          "responses" : {
-            "200" : {
-              "description" : "Auto generated using Swagger Inspector",
-              "content" : {
-                "application/json; charset=utf-8" : {
-                  "schema" : {
-                    "type" : "string"
-                  },
-                  "examples" : { }
+              },
+              "examples" : {
+                "0" : {
+                  "value" : " {\"name\": \"camera\",\n            \"display_name\": \"camera\",\n            \"description\": \"digital camera\"\n            \n}"
                 }
               }
             }
-          },
-          "servers" : [ {
-            "url" : "http://localhost:3000"
-          } ]
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
         },
         "servers" : [ {
           "url" : "http://localhost:3000"
         } ]
       },
-      "/products/1/" : {
-        "delete" : {
-          "description" : "Auto generated using Swagger Inspector",
-          "responses" : {
-            "200" : {
-              "description" : "Auto generated using Swagger Inspector",
-              "content" : {
-                "application/json; charset=utf-8" : {
-                  "schema" : {
+      "servers" : [ {
+        "url" : "http://localhost:3000"
+      } ]
+    },
+    "/categories/4/" : {
+      "put" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "name" : {
                     "type" : "string"
                   },
-                  "examples" : { }
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "display_name" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "  {\n        \"name\": \"mobile phone\",\n        \"display_name\": \"mobile phone\",\n        \"description\": \"smart phone\"\n        \n    }"
+                },
+                "1" : {
+                  "value" : "  {\n        \"name\": \"phone\"\n       \n        \n    }"
                 }
               }
             }
-          },
-          "servers" : [ {
-            "url" : "http://localhost:3000"
-          } ]
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
         },
         "servers" : [ {
           "url" : "http://localhost:3000"
         } ]
       },
-      "/products" : {
-        "get" : {
-          "description" : "Auto generated using Swagger Inspector",
-          "responses" : {
-            "200" : {
-              "description" : "Auto generated using Swagger Inspector",
-              "content" : {
-                "application/json; charset=utf-8" : {
-                  "schema" : {
+      "patch" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "name" : {
                     "type" : "string"
                   },
-                  "examples" : { }
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "display_name" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "  {\n        \"name\": \"mobile phone\",\n        \"display_name\": \"mobile phone\",\n        \"description\": \"smart phone\"\n        \n    }"
+                },
+                "1" : {
+                  "value" : "  {\n        \"name\": \"phone\"\n       \n        \n    }"
                 }
               }
             }
-          },
-          "servers" : [ {
-            "url" : "http://localhost:3000"
-          } ]
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
         },
         "servers" : [ {
           "url" : "http://localhost:3000"
         } ]
       },
-      "/categories" : {
-        "get" : {
-          "description" : "Auto generated using Swagger Inspector",
-          "parameters" : [ {
-            "name" : "name",
-            "in" : "query",
-            "schema" : {
-              "type" : "string"
-            },
-            "example" : "mobile phone"
-          } ],
-          "responses" : {
-            "200" : {
-              "description" : "Auto generated using Swagger Inspector",
-              "content" : {
-                "application/json; charset=utf-8" : {
-                  "schema" : {
-                    "type" : "string"
-                  },
-                  "examples" : { }
-                }
-              }
-            }
-          },
-          "servers" : [ {
-            "url" : "http://localhost:3000"
-          } ]
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      }
+      "servers" : [ {
+        "url" : "http://localhost:3000"
+      } ]
     }
   }
+}
