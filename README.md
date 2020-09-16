@@ -18,9 +18,21 @@
 
 - npm install supertest `to test server`
 
+- npm install cors
+
+- npm install mongoose
+
+- npm install --save-dev @code-fellows/supergoose
+
 ## start server 
 
+## lab-06 >> json server
 - `json-server --watch ./data/db.json`
+
+## lab-08 >> start using mongo DB
+
+- `sudo service mongod start`
+
 
 - node index.js
 
