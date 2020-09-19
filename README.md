@@ -61,6 +61,10 @@ in ReST testing tool, you can UPDATE, DELETE, and GET records for both categorie
 
 ## UML
 
+### lab-6
+
+![UML](/assets/lab06-uml.JPG)
+
 ### lab-7
 
 ![UML](/assets/uml-lab7.JPG)
