@@ -10,11 +10,11 @@ const serverModule = require('./lib/server.js');
 const MONGOOSE_URL = 'mongodb://localhost:27017/categories-products'; // name of DB:categories-products
 
 const mongooseOptions = {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-}
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+};
 mongoose.connect(MONGOOSE_URL, mongooseOptions);
 
 // run my application

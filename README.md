@@ -24,6 +24,8 @@
 
 - npm install --save-dev @code-fellows/supergoose
 
+- npm install eslint >> script `"lint": "eslint '**/*.js'"` >> npm run lint >> ` eslint --fix fileName` to fix errors
+
 ## start server 
 
 ## lab-06 >> json server
