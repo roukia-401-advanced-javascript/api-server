@@ -5,7 +5,7 @@ const express = require('express');
 const { get } = require('../models/category/category-collection');
 
 // require categories collection 
-const category = require('../models/category/category-collection');
+const categories = require('../models/category/category-collection');
 const products = require('../models/products/products-collection');
 const { update } = require('../models/category/category-schema');
 const { post } = require('./category');
@@ -36,8 +36,8 @@ router.param('model', getModel);
 function getModel (req, res, next) {
     let model = req.params.model;
     switch(model) {
-        case "category":
-            req.model = category;
+        case "categories":
+            req.model = categories; // req.model: category(required/collection file) //same as the model in the route 
             next();
             break;
         case "products":
@@ -53,7 +53,7 @@ function getModel (req, res, next) {
 // post function
 function postfun(req, res, next) {
     console.log("req.body >>> ", req.body)
-    category.create(req.body).then(data => { // categroy.create >> got to file collection >> go to mongo-model do the method >> return to collection 
+    categories.create(req.body).then(data => { // categroy.create >> got to file collection >> go to mongo-model do the method >> return to collection 
         res.status(201).json(data);
     }).catch(err => {
         // or do .catch(next) like the getFood function
@@ -65,7 +65,7 @@ function postfun(req, res, next) {
 //get function 
 function getfun(req, res, next) {
     const id = req.params.id;
-    category.get(id).then(data => {
+    categories.get(id).then(data => {
         // console.log(data);
         // console.log(data.length);
         res.status(200).json({count:data.length, results: data});
@@ -76,14 +76,15 @@ function getfun(req, res, next) {
 function updatefun(req, res, next) {
     const id = req.params.id;
     let obj = req.body;
-    category.update(id, obj).then(data => {
+    categories.update(id, obj).then(data => {
         res.status(200).json(data);
     }).catch(next);
 }
 
+//delete function
 function deletefun(req,res,next){
     const id = req.params.id;
-    category.delete(id).then(data => {
+    categories.delete(id).then(data => {
         res.status(200).json(data);
     }).catch(next);
 }
